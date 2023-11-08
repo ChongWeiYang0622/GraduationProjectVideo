@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>王塔米糕</title>
+  <style>
+    #player-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div id="player-container">
+    <div id="player"></div>
+  </div>
+
+  <script>
+    function onYouTubeIframeAPIReady() {
+      var player = new YT.Player('player', {
+        height: '560',
+        width: '840',
+        videoId: '',
+        playerVars: {
+          fs: 1,
+        }
+      });
+    }
+  </script>
+</body>
+</html>

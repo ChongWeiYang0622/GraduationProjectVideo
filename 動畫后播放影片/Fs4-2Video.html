@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>桐生日可麗餅</title>
+  <style>
+    /* CSS規則，將視頻容器居中 */
+    #player-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* 使容器充滿整個視窗高度 */
+    }
+  </style>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div id="player-container">
+    <div id="player"></div>
+  </div>
+
+  <script>
+    // 這個函數在YouTube Iframe API載入後執行
+    function onYouTubeIframeAPIReady() {
+      var player = new YT.Player('player', {
+        height: '560',
+        width: '840',
+        videoId: '', // YouTube視頻的ID
+        playerVars: {
+          fs: 1,  // 啟用全屏
+        }
+      });
+    }
+  </script>
+</body>
+</html>

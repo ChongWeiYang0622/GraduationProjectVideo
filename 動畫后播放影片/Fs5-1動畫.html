@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>播放影片然后打开页面</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        #bg-Video {
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="bg-Video" autoplay muted>
+        <source src="開門特效影片.mp4" type="video/mp4">
+    </video>
+    <script>
+        // 在影片播放完成后，执行跳转到所需页面的操作
+        var video = document.getElementById("bg-Video");
+        video.addEventListener("ended", function () {
+            window.location.href = "Fs5-1Video.html";
+        });
+    </script>
+</body>
+
+</html>
