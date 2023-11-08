@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>義興粥舖</title>
+  <title>旱溪夜市</title>
   <style>
-    /* CSS規則，將視頻容器居中 */
     #player-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* 使容器充滿整個視窗高度 */
+      height: 100vh;
     }
   </style>
   <script src="https://www.youtube.com/iframe_api"></script>
@@ -19,14 +18,13 @@
   </div>
 
   <script>
-    // 這個函數在YouTube Iframe API載入後執行
     function onYouTubeIframeAPIReady() {
       var player = new YT.Player('player', {
         height: '560',
         width: '840',
-        videoId: 'gI0Mcta5X5I', // YouTube視頻的ID
+        videoId: 'DEM5Un8IqRc',
         playerVars: {
-          fs: 1,  // 啟用全屏
+          fs: 1,
         }
       });
     }

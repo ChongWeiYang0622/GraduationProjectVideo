@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>義興粥舖</title>
+  <title>綠光</title>
   <style>
     /* CSS規則，將視頻容器居中 */
     #player-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* 使容器充滿整個視窗高度 */
+      height: 100vh;
+      /* 使容器充滿整個視窗高度 */
     }
   </style>
   <script src="https://www.youtube.com/iframe_api"></script>
 </head>
+
 <body>
   <div id="player-container">
     <div id="player"></div>
@@ -24,12 +27,19 @@
       var player = new YT.Player('player', {
         height: '560',
         width: '840',
-        videoId: 'gI0Mcta5X5I', // YouTube視頻的ID
+        videoId: 'P4UUgzVMUEo', // YouTube視頻的ID
         playerVars: {
           fs: 1,  // 啟用全屏
         }
       });
     }
   </script>
+  <script>
+    // 在3000毫秒（3秒）后跳回主页
+    setTimeout(function () {
+      window.location.href = "VideoQrCode.html";
+    }, 180000); // 时间间隔以毫秒为单位
+  </script>
 </body>
+
 </html>

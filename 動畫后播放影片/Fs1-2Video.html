@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>15號甜甜圈</title>
   <style>
@@ -8,11 +9,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* 使容器充滿整個視窗高度 */
+      height: 100vh;
+      /* 使容器充滿整個視窗高度 */
     }
   </style>
   <script src="https://www.youtube.com/iframe_api"></script>
 </head>
+
 <body>
   <div id="player-container">
     <div id="player"></div>
@@ -31,5 +34,12 @@
       });
     }
   </script>
+  <script>
+    // 在3000毫秒（3秒）后跳回主页
+    setTimeout(function () {
+      window.location.href = "VideoQrCode.html";
+    }, 180000); // 时间间隔以毫秒为单位
+  </script>
 </body>
+
 </html>
